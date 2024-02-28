@@ -1,4 +1,5 @@
-# Deploying cnvrg Operator on Intel Developer Cloud (IDC)
+
+# cnvrg MLOps on Intel Cloud with Intel Kubernetes Service (IKS) 
 
 This guide provides step-by-step instructions for deploying the cnvrg operator on Intel Developer Cloud (IDC). Follow these simple steps to get started.
 
@@ -34,15 +35,13 @@ This guide provides step-by-step instructions for deploying the cnvrg operator o
 - Navigate to the load balancer settings.
 - Create a new load balancer service.
 - Configure the load balancer to open ports 80 and 443 for public network access.
-- ![Load Balancer Settings](load_balancer_settings.png)
+- ![Load Balancer Settings](load_balancer.png)
 - Save the configuration and wait for the load balancer to be provisioned.
 
 
-![cnvrg Logo](kially1.png)
 
-**cnvrg MLOps on Intel Cloud with Intel Kubernetes Service (IKS)**
 
-## Deployment
+## Deployment step
 
 ### Istio Installation
 
@@ -98,7 +97,8 @@ helm install cnvrg cnvrg-mlops-idc \
  --set registry.password="cabbecc7-4330-47b6-85c6-ea0ad5019cfa" \
  --set networking.ingress.istioIngressSelectorKey="istio" \
  --set networking.ingress.istioIngressSelectorValue="gateway"
+```
 
-# These comments provide a brief explanation for each command, enhancing the clarity and understanding of the deployment process.
 
 
+![cnvrg Logo](kially1.png)
