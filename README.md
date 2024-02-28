@@ -25,7 +25,7 @@ This guide provides step-by-step instructions for deploying the cnvrg operator o
 3. **Add Node Group to the Cluster:**
 - Navigate to the cluster settings.
 - Select the option to add a new node group.
--  ![cnvrg Logo](launch_k8s_idc.png)
+-  ![cnvrg Logo](add_node.png)
     1. Choose the appropriate node type, and specify the desired quantity of nodes for the group.
     2. Confirm the selection to add the node group to the cluster.
    - Click on "Launch" and wait for node-group.
