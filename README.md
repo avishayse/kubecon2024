@@ -12,9 +12,11 @@ This guide provides step-by-step instructions for deploying the cnvrg operator o
 1. **Go to Intel Developer Cloud Console:**
    - Open your web browser and navigate to the [Intel Developer Cloud (IDC) console](https://console.cloud.intel.com/)). console.
 
+
 2. **Spin Up Resources:**
    - In the IDC console, navigate to the Kubernetes service.
    - Launch a control plane cluster by following these steps:
+![cnvrg Logo](launch_k8s_idc.png)  
      1. Provide a unique name for your cluster.
      2. Choose the desired Kubernetes version.
      3. Proceed with the default or customize advanced settings as needed.
@@ -57,7 +59,7 @@ helm install istio-gateway istio/gateway \
 ```
 
 ### Longhorn Installation
-You can install Longhorn using Helm by following the steps outlined in the Longhorn documentation.
+You can install Longhorn using Helm by following the steps outlined in the Longhorn [documentation.](https://longhorn.io/docs/1.6.0/deploy/install/install-with-helm/)
 
 ```bash
 # Install Longhorn with specified settings
