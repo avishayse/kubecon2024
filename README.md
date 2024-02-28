@@ -11,7 +11,7 @@ This guide provides step-by-step instructions for deploying the cnvrg operator o
 ## Deployment Steps
 
 1. **Go to Intel Developer Cloud Console:**
-   - Open your web browser and navigate to the [Intel Developer Cloud (IDC) console](https://console.cloud.intel.com/)). console.
+   - Open your web browser and navigate to the [Intel Developer Cloud (IDC) console](https://console.cloud.intel.com/)).
 
 
 2. **Spin Up Resources:**
