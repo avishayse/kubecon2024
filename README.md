@@ -1,5 +1,7 @@
 # kubecon2024
 
+![cnvrg Logo](kially1.png)
+
 **cnvrg MLOps on Intel Cloud with Intel Kubernetes Service (IKS)**
 
 ## Deployment
@@ -28,15 +30,22 @@ helm install istio-gateway istio/gateway \
   --set service.externalIPs[1]=100.82.189.93 \
   --create-namespace -n istio-system
 
+```
 
+### Longhorn Installation
+You can install Longhorn using Helm by following the steps outlined in the Longhorn documentation.
+
+```bash
 # Install Longhorn with specified settings
 helm install longhorn longhorn/longhorn \
  --namespace longhorn-system \
  --create-namespace \
  --version 1.6.0 \
  --set defaultSettings.defaultDataPath=/mnt/longhorn
+```
 
-
+### cnvrg MLOps Installation
+```bash
 # Install cnvrg MLOps IDC with specified configurations
 helm install cnvrg cnvrg-mlops-idc \
  --create-namespace -n cnvrg \
@@ -47,5 +56,6 @@ helm install cnvrg cnvrg-mlops-idc \
  --set networking.ingress.istioIngressSelectorKey="istio" \
  --set networking.ingress.istioIngressSelectorValue="gateway"
 
+# These comments provide a brief explanation for each command, enhancing the clarity and understanding of the deployment process.
 
-These comments provide a brief explanation for each command, enhancing the clarity and understanding of the deployment process.
+
