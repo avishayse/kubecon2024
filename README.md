@@ -29,6 +29,13 @@ This guide provides step-by-step instructions for deploying the cnvrg operator o
     1. Choose the appropriate node type, and specify the desired quantity of nodes for the group.
     2. Confirm the selection to add the node group to the cluster.
    - Click on "Launch" and wait for node-group.
+ 
+4. **Create Load Balancer Service:**
+- Navigate to the load balancer settings.
+- Create a new load balancer service.
+- Configure the load balancer to open ports 80 and 443 for public network access.
+- ![Load Balancer Settings](load_balancer_settings.png)
+- Save the configuration and wait for the load balancer to be provisioned.
 
 
 ![cnvrg Logo](kially1.png)
