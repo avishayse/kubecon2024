@@ -1,4 +1,28 @@
-# kubecon2024
+# Deploying cnvrg Operator on Intel Developer Cloud (IDC)
+
+This guide provides step-by-step instructions for deploying the cnvrg operator on Intel Developer Cloud (IDC). Follow these simple steps to get started.
+
+## Prerequisites
+
+- Access to [Intel Developer Cloud (IDC) console](https://intel.com/idc).
+- Permissions to spin up resources and manage Kubernetes services.
+
+## Deployment Steps
+
+1. **Go to Intel Developer Cloud Console:**
+   - Open your web browser and navigate to the [Intel Developer Cloud (IDC) console](https://console.cloud.intel.com/)). console.
+
+2. **Spin Up Resources:**
+   - In the IDC console, navigate to the Kubernetes service.
+   - Launch a control plane cluster by following these steps:
+     1. Provide a unique name for your cluster.
+     2. Choose the desired Kubernetes version.
+     3. Proceed with the default or customize advanced settings as needed.
+   - Click on "Launch" to spin up the cluster.
+
+3. **Deploy cnvrg Operator:**
+   - Once the cluster is up and running, you can proceed to deploy the cnvrg operator.
+   - Follow the [official documentation](https://docs.cnvrg.io/) or consult the cnvrg support team for instructions on deploying the operator on a Kubernetes cluster.
 
 ![cnvrg Logo](kially1.png)
 
