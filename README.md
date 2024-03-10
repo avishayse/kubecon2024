@@ -38,7 +38,9 @@ This guide provides step-by-step instructions for deploying the cnvrg operator o
 - ![Load Balancer Settings](load_balancer.png)
 - Save the configuration and wait for the load balancer to be provisioned.
 
-
+5. **DNS - integration with an external DNS service:**
+- The deployment necessitates should have a setup "A records" a wildcard DNS entry specifically designed to resolve to the K8s Ingress IP or LoadBalancer.
+For instance, a wildcard DNS record would be configured as *.cnvrg.my-org.com, directing all subdomain traffic appropriately.
 
 
 ## Deployment step
@@ -80,10 +82,6 @@ helm install longhorn longhorn/longhorn \
  --version 1.6.0 \
  --set defaultSettings.defaultDataPath=/mnt/longhorn
 ```
-
-### DNS - The deployment necessitates integration with an external DNS service, involving the setup of A records and a wildcard DNS entry specifically designed to resolve to the K8s Ingress IP or LoadBalancer. 
-For instance, a wildcard DNS record would be configured as *.cnvrg.my-org.com, directing all subdomain traffic appropriately.
-
 
 ### cnvrg MLOps Installation
 
