@@ -81,6 +81,10 @@ helm install longhorn longhorn/longhorn \
  --set defaultSettings.defaultDataPath=/mnt/longhorn
 ```
 
+### DNS - The deployment necessitates integration with an external DNS service, involving the setup of A records and a wildcard DNS entry specifically designed to resolve to the K8s Ingress IP or LoadBalancer. 
+For instance, a wildcard DNS record would be configured as *.cnvrg.my-org.com, directing all subdomain traffic appropriately.
+
+
 ### cnvrg MLOps Installation
 
 Deploy cnvrg Operator:
@@ -94,7 +98,7 @@ helm install cnvrg cnvrg-mlops-idc \
  --set clusterDomain=cnvrg-on-idc.azops.cnvrg.io \
  --set controlPlane.image=cnvrg/app:v4.7.52-DEV-15824-cnvrg-agnostic-infra-45 \
  --set registry.user="cnvrghelm" \
- --set registry.password="cabbecc7-4330-47b6-85c6-ea0ad5019cfa" \
+ --set registry.password="cabbecc7sd-" \
  --set networking.ingress.istioIngressSelectorKey="istio" \
  --set networking.ingress.istioIngressSelectorValue="gateway"
 ```
