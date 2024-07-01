@@ -120,4 +120,4 @@ helm install cnvrg cnvrg-mlops-idc \
     * In this deployment, Longhorn was used for storage management.
 
 ### Network:
-We need Ingress provides HTTP and HTTPS routing to services within the cluster, manages external access with controlled entry points, distributes traffic for high availability, handles SSL termination for secure communication, and supports name-based virtual hosting for routing traffic based on the hostname.
+* We need Ingress provides HTTP and HTTPS routing to services within the cluster, manages external access with controlled entry points, distributes traffic for high availability, handles SSL termination for secure communication, and supports name-based virtual hosting for routing traffic based on the hostname.
