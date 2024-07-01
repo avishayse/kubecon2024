@@ -104,3 +104,20 @@ helm install cnvrg cnvrg-mlops-idc \
 
 
 ![cnvrg Logo](kially1.png)
+
+
+
+
+## Gaps to Address for Deploying cnvrg on IKS
+
+### DNS Integration with an External DNS Service:
+* The deployment requires setting up "A records" with a wildcard DNS entry to resolve to the K8s Ingress IP or LoadBalancer.
+    * Example: A wildcard DNS record configured as *.cnvrg.my-org.com will direct all subdomain traffic appropriately.
+    * In this case, Route53 DNS was used as the service.
+
+### Storage:
+* More capacity storage and native CSI are needed.
+    * In this deployment, Longhorn was used for storage management.
+
+### Network:
+We need Ingress provides HTTP and HTTPS routing to services within the cluster, manages external access with controlled entry points, distributes traffic for high availability, handles SSL termination for secure communication, and supports name-based virtual hosting for routing traffic based on the hostname.
